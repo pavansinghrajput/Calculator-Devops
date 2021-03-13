@@ -20,7 +20,7 @@ public class App {
         while (true) {
             System.out.println(" ");
             System.out.println(" ");
-            System.out.println("Enter 1,for Square Root\nEnter 2,for Factorial\nEnter 3,for Log base e\n4Enter 4,for Power Function\n5)Enter 5,for EXit");
+            System.out.println("Enter 1,for Square Root\nEnter 2,for Factorial\nEnter 3,for Log base e\nEnter 4,for Power Function\nEnter 5,for EXit");
             System.out.println(" ");
             System.out.print("Enter your choice: ");
             n = scan.nextInt();
