@@ -18,8 +18,10 @@ public class App {
         System.out.println("                                 Scientific Calculator                                   ");
         System.out.println("=========================================================================================");
         while (true) {
-            // System.out.println("Select anyone among 5 options");
-            System.out.println("1) for Square Root,Enter 1\n2 for Factorial,Enter 2\n3 for Log base e,Enter 3\n4 for Power Function,Enter 4\n5) for EXit,Enter 5");
+            System.out.println(" ");
+            System.out.println(" ");
+            System.out.println("Enter 1,for Square Root\nEnter 2,for Factorial\nEnter 3,for Log base e\n4Enter 4,for Power Function\n5)Enter 5,for EXit");
+            System.out.println(" ");
             System.out.print("Enter your choice: ");
             n = scan.nextInt();
 
@@ -29,7 +31,7 @@ public class App {
 
                 double a = scan.nextDouble();
                 double res = Sqeroot(a);
-                System.out.println("The Square root of " + a + "is" + res);
+                System.out.println("The Square root of " + a + " is " + res);
 
             } else if (n == 2) {
                 System.out.println("Enter number for Factorial:");
@@ -38,7 +40,7 @@ public class App {
                 double res = Fact(b);
                 if(res>0)
                 {
-                    System.out.println("The Factorial of " + b + "is" + res);
+                    System.out.println("The Factorial of " + b + " is " + res);
                 }
 
             } else if (n == 3) {
@@ -46,7 +48,7 @@ public class App {
 
                 double a = scan.nextDouble();
                 double res = Loge(a);
-                System.out.println("The Log of " + a + "is" + res);
+                System.out.println("The Log of " + a + " is " + res);
 
 
             } else if (n == 4) {
@@ -58,7 +60,7 @@ public class App {
                 double b = scan.nextDouble();
 
                 double res = Powe(a,b);
-                System.out.println("Power of " + a + "and "+b+"is" + res);
+                System.out.println("Power of " + a + "and "+b+" is " + res);
             } else if (n == 5) {
                 System.out.println("Ending the Program");
                 logger.info("Entered 5 to exit.");
@@ -122,7 +124,7 @@ public class App {
     static double Sqeroot(double a) {
 
         double res = Math.sqrt(a);
-        logger.info("Square root of " + a + "is" + res);
+        logger.info("Square root of " + a + " is " + res);
 
         return res;
     }
@@ -140,7 +142,7 @@ public class App {
             for (long i = b; i > 0; i--) {
                 res = res * i;
             }
-            logger.info("Factorial of " + b + "is" + res);
+            logger.info("Factorial of " + b + " is " + res);
             return res;
         }
 
@@ -160,7 +162,7 @@ public class App {
     static double Powe(double a,double b) {
 
         double res = Math.pow(a,b);
-        logger.info("Power of " + a + "and "+b+"is" + res);
+        logger.info("Power of " + a + "and "+b+" is " + res);
 
         return res;
     }
