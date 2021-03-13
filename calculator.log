@@ -1,12 +1,4 @@
-13/Mar/2021:16:09:03 238 [App.java] [INFO] calculator.App Adding two numbers15.0and20.0
-13/Mar/2021:16:26:46 418 [App.java] [INFO] calculator.App Adding two numbers15.0and20.0
-13/Mar/2021:16:31:09 868 [App.java] [INFO] calculator.App Adding two numbers15.0and20.0
-13/Mar/2021:18:45:40 710 [App.java] [INFO] calculator.App Adding two numbers15.0and20.0
-13/Mar/2021:20:23:21 998 [App.java] [INFO] calculator.App Factorial of 49is8789267254022766592
-13/Mar/2021:20:23:22 009 [App.java] [INFO] calculator.App Log of 1.0is0.0
-13/Mar/2021:20:23:22 010 [App.java] [INFO] calculator.App Power of 7.0and 3.0is343.0
-13/Mar/2021:20:23:22 012 [App.java] [INFO] calculator.App Square root of 4.0is2.0
-13/Mar/2021:20:24:44 920 [App.java] [INFO] calculator.App Factorial of 10is3628800
-13/Mar/2021:20:24:44 927 [App.java] [INFO] calculator.App Log of 1.0is0.0
-13/Mar/2021:20:24:44 929 [App.java] [INFO] calculator.App Power of 7.0and 3.0is343.0
-13/Mar/2021:20:24:44 929 [App.java] [INFO] calculator.App Square root of 4.0is2.0
+2021-03-13 22:54:30.919 [main] INFO  calculator.App - Factorial of 10 is 3628800
+2021-03-13 22:54:30.939 [main] INFO  calculator.App - Log of 1.0is0.0
+2021-03-13 22:54:31.014 [main] INFO  calculator.App - Power of 7.0and 3.0 is 343.0
+2021-03-13 22:54:31.015 [main] INFO  calculator.App - Square root of 4.0 is 2.0
