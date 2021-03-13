@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of scientificcalculator
+  hosts: all
+  tasks:
+    - name: Pull calculator image
+      docker_image:
+        name: pavan996/calculator
+        source: pull
