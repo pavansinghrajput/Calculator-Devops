@@ -37,11 +37,18 @@ public class App {
                 System.out.println("Enter number for Factorial:");
 
                 Long b = scan.nextLong();
-                double res = Fact(b);
-                if(res>0)
-                {
-                    System.out.println("The Factorial of " + b + " is " + res);
+                try {
+                    double res = Fact(b);
+                    if(res>0)
+                    {
+                        System.out.println("The Factorial of " + b + " is " + res);
+                    }
                 }
+                catch (Exception e)
+                {
+                    System.out.println("Arithmetic Exception caused as number entered for factorial is negative.");
+                }
+
 
             } else if (n == 3) {
                 System.out.println("Enter number for Log:");
@@ -92,14 +99,10 @@ public class App {
         if(b<0) {
                 System.out.println("Enter number >= 0");
             logger.error("Number entered for Square root is negative.");
-            try {
+
                 throw new ArithmeticException("Number must be >=0");
-            }
-            catch (Exception e)
-            {
-                System.out.println("Arithmetic Exception caused as number entered for factorial is negative.");
-            }
-            return -1;
+
+
                 }
         else {
             for (long i = b; i > 0; i--) {

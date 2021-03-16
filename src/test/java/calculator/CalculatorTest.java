@@ -44,7 +44,7 @@ public class CalculatorTest {
 	        Assert.assertEquals(expectedResult, result, 0);
 		}
 
-	/*@Test(expected = ArithmeticException.class)
+	@Test(expected = ArithmeticException.class)
 	public void testNgtfact() {
 
 		//long expectedResult = 3628800;
@@ -52,7 +52,7 @@ public class CalculatorTest {
 		System.out.println("Number cant be negative.");
 		//Assert.assertEquals(expectedResult, result, 0);
 	}
-*/
+
 	@Test
 	public void testLoge() {
 		double a = 1;
