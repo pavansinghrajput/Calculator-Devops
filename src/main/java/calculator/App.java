@@ -69,58 +69,14 @@ public class App {
             } else {
                 System.out.println("PLease Enter Valid Option");
             }
-            /*
-            if (choice > 4 || choice <1) {
-                flag = 1;
-                System.out.println("Incorrect Option Choosed, Ending the Program\n");
-            }
-            else if (flag != 1){
-            	 System.out.println("Enter two numbers");
-                 System.out.print("Enter number 1: ");
-                 num1 = scan.nextDouble();
-                 System.out.print("Enter number 2: ");
-                 num2 = scan.nextDouble();
-                 
-                 switch(choice) {
-                 case 1: System.out.println(num1+" + "+num2+" = "+Add(num1, num2));
-                 		break;
-                 case 2: System.out.println(num1+" - "+num2+" = "+Subtract(num1, num2));
-                 		break;
-                 case 3: System.out.println(num1+" * "+num2+" = "+Multiply(num1, num2));
-                 		break;
-                 case 4: System.out.println(num1+" / "+num2+" = "+Divide(num1, num2));
-                		break;
-                default: System.out.println("Exiting, Bye");
-                flag=1;
-                }
-            }
-            System.out.println("\n");
-            }while(flag==0);*/
+
         }
 
     }
 
     //logger.error("print an error");
     //logger.info("print some info");
-    /*static double (double a) {
-    logger.info("Adding two numbers"+a +"and");
 
-    	return a ;
-    }
-    static double Subtract(double a, double b) {
-    	return a - b;
-    }
-    static double Multiply(double a, double b) {
-    	return a * b;
-    }
-    static double Divide(double a, double b) {
-    	if (b == 0) {
-    		throw new IllegalArgumentException("Divisor cannot be zero, Exiting");
-    	}
-    	else return a / b;
-    }
-}
-*/
     static double Sqeroot(double a) {
 
         double res = Math.sqrt(a);
@@ -135,7 +91,14 @@ public class App {
         long res=1;
         if(b<0) {
                 System.out.println("Enter number >= 0");
-            logger.info("Number entered for Square root is negative.");
+            logger.error("Number entered for Square root is negative.");
+            try {
+                throw new ArithmeticException("Number must be >=0");
+            }
+            catch (Exception e)
+            {
+                System.out.println("Arithmetic Exception caused as number entered for factorial is negative.");
+            }
             return -1;
                 }
         else {

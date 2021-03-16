@@ -21,6 +21,19 @@ public class CalculatorTest {
 	        double result = calculator.Sqeroot(a);
 	        Assert.assertEquals(expectedResult, result, 0);
 	    }
+	@Test
+	public void testNegsqeroot() {
+		double a = -2;
+
+		String expectedResult = "NaN";
+		double result = calculator.Sqeroot(a);
+		//if(result.equals(expectedResult)==true);
+
+		Assert.assertEquals(expectedResult, String.valueOf(result));
+	}
+
+
+
 		
 		@Test
 		public void testFact() {
@@ -31,6 +44,15 @@ public class CalculatorTest {
 	        Assert.assertEquals(expectedResult, result, 0);
 		}
 
+	/*@Test(expected = ArithmeticException.class)
+	public void testNgtfact() {
+
+		//long expectedResult = 3628800;
+		calculator.Fact(-7);
+		System.out.println("Number cant be negative.");
+		//Assert.assertEquals(expectedResult, result, 0);
+	}
+*/
 	@Test
 	public void testLoge() {
 		double a = 1;
@@ -38,6 +60,26 @@ public class CalculatorTest {
 		double expectedResult = 0.0;
 		double result = calculator.Loge(a);
 		Assert.assertEquals(expectedResult, result, 0.0001);
+	}
+
+	@Test
+	public void testLogezero() {
+		double a = 0;
+
+		String expectedResult = "-Infinity";
+		double result = calculator.Loge(a);
+		Assert.assertEquals(expectedResult, String.valueOf(result));
+	}
+
+	@Test
+	public void testLogeneg() {
+		double a = -15;
+
+		String expectedResult = "NaN";
+		double result = calculator.Loge(a);
+		//if(result.equals(expectedResult)==true);
+
+		Assert.assertEquals(expectedResult, String.valueOf(result));
 	}
 		
 		@Test
@@ -48,6 +90,17 @@ public class CalculatorTest {
 	        double result = calculator.Powe(a, b);
 	        Assert.assertEquals(expectedResult, result, 0);
 		}
+
+	@Test
+	public void testPowezero() {
+		double a = 0;
+		double b = 0;
+		double expectedResult = 1;
+		double result = calculator.Powe(a, b);
+		Assert.assertEquals(expectedResult, result, 0);
+	}
+
+
 		
 
 		
