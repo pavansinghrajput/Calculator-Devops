@@ -92,3 +92,21 @@
 2021-03-17 01:53:39.237 [main] ERROR calculator.App - Number entered for Square root is negative.
 2021-03-17 01:53:39.239 [main] INFO  calculator.App - Power of 0.0and 0.0 is 1.0
 2021-03-17 01:53:39.240 [main] INFO  calculator.App - Square root of 4.0 is 2.0
+2021-03-17 02:00:41.692 [main] INFO  calculator.App - Square root of -2.0 is NaN
+2021-03-17 02:00:41.695 [main] INFO  calculator.App - Log of 0.0is-Infinity
+2021-03-17 02:00:41.696 [main] INFO  calculator.App - Factorial of 10 is 3628800
+2021-03-17 02:00:41.697 [main] INFO  calculator.App - Log of 1.0is0.0
+2021-03-17 02:00:41.697 [main] INFO  calculator.App - Power of 7.0and 3.0 is 343.0
+2021-03-17 02:00:41.698 [main] INFO  calculator.App - Log of -15.0isNaN
+2021-03-17 02:00:41.700 [main] ERROR calculator.App - Number entered for Square root is negative.
+2021-03-17 02:00:41.701 [main] INFO  calculator.App - Power of 0.0and 0.0 is 1.0
+2021-03-17 02:00:41.702 [main] INFO  calculator.App - Square root of 4.0 is 2.0
+2021-03-17 02:03:54.852 [main] INFO  calculator.App - Square root of -2.0 is NaN
+2021-03-17 02:03:54.854 [main] INFO  calculator.App - Log of 0.0is-Infinity
+2021-03-17 02:03:54.855 [main] INFO  calculator.App - Factorial of 10 is 3628800
+2021-03-17 02:03:54.855 [main] INFO  calculator.App - Log of 1.0is0.0
+2021-03-17 02:03:54.856 [main] INFO  calculator.App - Power of 7.0and 3.0 is 343.0
+2021-03-17 02:03:54.856 [main] INFO  calculator.App - Log of -15.0isNaN
+2021-03-17 02:03:54.857 [main] ERROR calculator.App - Number entered for Factorial root is -7. Fact=Error.
+2021-03-17 02:03:54.858 [main] INFO  calculator.App - Power of 0.0and 0.0 is 1.0
+2021-03-17 02:03:54.858 [main] INFO  calculator.App - Square root of 4.0 is 2.0

@@ -98,7 +98,7 @@ public class App {
         long res=1;
         if(b<0) {
                 System.out.println("Enter number >= 0");
-            logger.error("Number entered for Square root is negative.");
+            logger.error("Number entered for Factorial root is "+b+". Fact=Error.");
 
                 throw new ArithmeticException("Number must be >=0");
 
