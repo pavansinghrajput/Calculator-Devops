@@ -92,28 +92,20 @@ public class App {
         return res;
     }
 
-    static long Fact(long b) {
-
-        //double res = Math.sqrt(a);
+      static long Fact(long n) {
         long res=1;
-        if(b<0) {
+        if(n<0) {
                 System.out.println("Enter number >= 0");
-            logger.error("Number entered for Factorial root is "+b+". Fact=Error.");
-
+            logger.error("Number entered for Factorial root is "+n+". Fact=Error.");
                 throw new ArithmeticException("Number must be >=0");
-
-
                 }
         else {
-            for (long i = b; i > 0; i--) {
+            for (long i = n; i > 0; i--) {
                 res = res * i;
             }
-            logger.info("Factorial of " + b + " is " + res);
+            logger.info("Factorial of " + n + " is " + res);
             return res;
         }
-
-
-
         }
 
 

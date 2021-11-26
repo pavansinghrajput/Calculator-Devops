@@ -13,7 +13,128 @@ public class CalculatorTest {
 	        calculator = new App();
 	    }
 
+
+		//Edge coverage
+
 		@Test
+		public void testfact12348()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+		Throwable e = null;
+
+		try {
+			calculator.Fact(-2);
+		} catch (Throwable ex) {
+			e = ex;
+		}
+
+		assertTrue(e instanceof ArithmeticException);
+	    //assertNotEquals(2, e instanceof ArithmeticException);
+
+	}
+
+	@Test
+	public void testfact12356578()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertEquals(1,calculator.Fact(1));
+
+
+	}
+
+	//Prime path coverage
+	@Test
+	public void testfact123578() {
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertEquals(1, calculator.Fact(0));
+
+	}
+	@Test
+	public void testfact1235656578()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertEquals(2,calculator.Fact(2));
+
+
+	}
+	@Test
+	public void testfactnormalflow()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertEquals(120,calculator.Fact(5));
+
+
+	}
+
+//negative cases
+
+	@Test
+	public void Ntestfact12348()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+		Throwable e = null;
+
+		try {
+			calculator.Fact(-2);
+		} catch (Throwable ex) {
+			e = ex;
+		}
+
+		//assertTrue(e instanceof ArithmeticException);
+		assertNotEquals(2, e instanceof ArithmeticException);
+
+	}
+@Test
+public void Ntestfact12356578()
+{
+
+	//assertEquals(,calculator.Fact(-2));
+
+	assertNotEquals(2,calculator.Fact(1));
+
+
+}
+	@Test
+	public void Ntestfact123578() {
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertNotEquals(3, calculator.Fact(0));
+
+	}
+	@Test
+	public void Ntestfact1235656578()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertNotEquals(-3,calculator.Fact(2));
+
+
+	}
+	@Test
+	public void Ntestfactnormalflow()
+	{
+
+		//assertEquals(,calculator.Fact(-2));
+
+		assertNotEquals(120,calculator.Fact(6));
+
+
+	}
+
+
+	@Test
 	    public void testSqeroot() {
 	        double a = 4.0;
 
